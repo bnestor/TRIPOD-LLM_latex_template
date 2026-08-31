@@ -1,0 +1,431 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\title{Identify the study as developing, fine-tuning and/or evaluating the performance of an LLM,
+specifying the task, the target population and the outcome to be predicted.}%~\label{tripod:title}
+\author{Author }
+\date{August 2026}
+
+\begin{document}
+\maketitle
+
+
+\section{Abstract}
+\label{sec:abstract}
+% See TRIPOD-LLM for abstracts.
+
+%TRIPOD LLM: Title
+% TRIPOD LLM: 2a. Identify the study as developing, fine-tuning and/or evaluating the performance of an LLM, specifying the task, the target population and the outcome to be predicted
+
+%TRIPOD LLM: Background
+% TRIPOD LLM: 2b. Provide a brief explanation of the healthcare context, use case and rationale for developing or evaluating the performance of an LLM.
+
+% TRIPOD LLM: Objectives
+% TRIPOD LLM: 2c.  Specify the study objectives, including whether the study describes LLMs development, tuning and/or evaluation
+
+% TRIPOD LLM: Methods
+% TRIPOD LLM: 2d. Describe the key elements of the study setting.
+% TRIPOD LLM: 2e. Detail all data used in the study, specify data splits and any selective use of data.
+% TRIPOD LLM: 2f. Specify the name and version of LLM(s) used.
+% TRIPOD LLM: 2g. Briefly summarize the LLM-building steps, including any fine-tuning, reward modeling and RLHF.
+% TRIPOD LLM: 2h. Describe the specific tasks performed by the LLMs (for example, medical QA, summarization and extraction), highlighting key inputs and outputs used in the final LLM
+% TRIPOD LLM: 2i. Specify the evaluation datasets/populations used, including the endpoint evaluated, and detail whether this information was held out during training/tuning where relevant and what measure(s) were used to evaluate LLM performance.
+
+% TRIPOD LLM: Results
+% TRIPOD LLM: 2j. Give an overall report and interpretation of the main results.
+
+% TRIPOD LLM: Discussion
+% TRIPOD LLM: 2k. Explicitly state any broader implications or concerns that have arisen in light of these results.
+
+% TRIPOD LLM: Other
+% TRIPOD LLM: 2l. Give the registration number and name of the registry or repository (if relevant).
+
+
+\section{Introduction}\label{sec:introduction}
+%TRIPOD LLM Background
+%TRIPOD LLM: 3a. Explain the healthcare context/use case (for example, administrative, diagnostic, therapeutic and clinical workflow) and rationale for developing or evaluating the LLM, including references to existing approaches and models.
+
+
+%TRIPOD LLM: 3b. Describe the target population and the intended use of the LLM in the context of the care pathway, including its intended users in current gold standard practices (for example, healthcare professionals, patients, public or administrators).
+
+% TRIPOD LLM Objectives
+% TRIPOD LLM: 4. Specify the study objectives, including whether the study describes the initial development, fine-tuning or validation of an LLM (or multiple stages).
+
+\section{Methods}\label{sec:methods}
+
+\subsection{Data}\label{sec:data}
+
+%TRIPOD LLM: Data
+%TRIPOD LLM: 5a. Describe the sources of data separately for the training, tuning and/or evaluation datasets and the rationale for using these data (for example, web corpora, clinical research/trial data, EHR data or unknown).
+
+%TRIPOD LLM: 5b. Describe the relevant data points and provide a quantitative and qualitative description of their distribution and other relevant descriptors of the dataset (for example, source, languages and countries of origin).
+
+% TRIPOD LLM: 5c. Specifically state the date of the oldest and newest item of text used in the development process (training, fine-tuning and reward modeling) and the evaluation datasets.
+
+% TRIPOD LLM: 5d. Describe any data preprocessing and quality checking, including whether this was similar across text corpora, institutions and relevant sociodemographic groups.
+
+% TRIPOD LLM: 5e. Describe how missing and imbalanced data were handled and provide reasons for omitting any data.
+
+\subsection{Analytical methods}\label{sec:analytical_methods}
+% TRIPOD LLM: Analytical Methods
+% TRIPOD LLM: 6a. Report the LLM name, version and last date of training.
+
+% TRIPOD  LLM: 6b. Report details of the LLM development process, such as LLM architecture, training, fine-tuning procedures and alignment strategy (for example, reinforcement learning and directpreference optimization) and alignment goals (for example, helpfulness, honesty and harmlessness).
+
+% TRIPOD LLM: 6c. Report details of how the text was generated using the LLM, including any prompt engineering (including consistency of outputs), and inference settings (for example, seed, temperature, max token length and penalties), as relevant
+
+% TRIPOD LLM: 6d. Specify the initial and postprocessed output of the LLM (for example, probabilities, classification and unstructured text).
+
+% TRIPOD LLM: 6e. Provide details and rationale for any classification and, if applicable, how the probabilities were determined and thresholds identified.
+
+\subsection{LLM Output}\label{sec:llm_output}
+% TRIPOD LLM: LLM output
+% TRIPOD LLM: 7a. Include metrics that capture the quality of generative outputs, such as consistency, relevance, accuracy and presence/type of errors compared to gold standards.
+
+% TRIPOD LLM: 7b. Report the outcome metrics’ relevance to the downstream task at deployment time and, where applicable, the correlation of metric to human evaluation of the text for the intended use.
+
+% TRIPOD LLM: 7c. Clearly define the outcome, how the LLM predictions were calculated (for example, formula, code, object and API), the date of inference for closed-source LLMs and evaluation metrics.
+
+% TRIPOD LLM: 7d. If outcome assessment requires subjective interpretation, describe the qualifications of the assessors, any instructions provided, relevant information on demographics of the assessors and interassessor agreement.
+
+% TRIPOD LLM: 7e. Specify how performance was compared to other LLMs, humans and other benchmarks or standards
+
+\subsection{Annotation}\label{sec:annotation}
+% TRIPOD LLM: Annotation
+% TRIPOD LLM: 8a. If annotation was done, report how the text was labeled, including providing specific annotation guidelines with examples.
+
+% TRIPOD LLM: 8b. If annotation was done, report how many annotators labeled the dataset(s), including the proportion of data in each dataset that was annotated by more than one annotator, and the interannotator agreement.
+
+% TRIPOD LLM: 8c. If annotation was done, provide information on the background and experience of the annotators or the characteristics of any models involved in labeling.
+
+\subsection{Prompting}\label{sec:prompting}
+% TRIPOD LLM: Prompting
+% TRIPOD LLM: 9a. If research involved prompting LLMs, provide details on the processes used during prompt design, curation and selection
+
+% TRIPOD LLM: 9b. If research involved prompting LLMs, report what data were used to develop the prompts.
+
+\subsection{Summarization}\label{sec:summarization}
+% TRIPOD LLM: Summarization
+% TRIPOD LLM: 10.  Describe any preprocessing of the data before summarization.
+
+\subsection{Instruction tuning/alignment}\label{sec:instruction_tuning_alignment}
+% TRIPOD LLM: Instruction tuning/alignment
+% TRIPOD LLM: 11. If instruction tuning/alignment strategies were used, what were the instructions, data and interface used for evaluation, and what were the characteristics of the populations doing the evaluation?
+
+\subsection{Compute}\label{sec:compute}
+% TRIPOD LLM: Compute
+% TRIPOD LLM: 12. Report compute, or proxies thereof (for example, time on what and how many machines, cost on what and how many machines, inference time, floating-point operations per second), required to carry out methods.
+
+\subsection{Ethical approval}\label{sec:ethical_approval}
+% TRIPOD LLM: Ethical approval
+% TRIPOD LLM: 13. Name the institutional research board or ethics committee that approved the study and describe the participant-informed consent or the ethics committee waiver of informed consent
+
+\subsection{Open science}\label{sec:open_science}
+% TRIPOD LLM: Open science
+% TRIPOD LLM: 14a. Give the source of funding and the role of the funders for the present study. 
+
+%TRIPOD LLM: 14b. Declare any conflicts of interest and financial disclosures for all authors.
+
+%TRIPOD LLM: 14c. Indicate where the study protocol can be accessed or state that a protocol was not prepared.
+
+% TRIPOD LLM: 14d. Provide registration information for the study, including register name and registration number, or state that the study was not registered.
+
+% TRIPOD LLM: 14e. Provide details of the availability of the study data.
+
+% TIRPOD LLM: 14f. Provide details of the availability of the code to reproduce the study results.
+
+\subsection{Public involvement}\label{sec:public_involvement}
+% TRIPOD LLM: Public involvement
+% TRIPOd LLM: 15. Provide details of any patient and public involvement during the design, conduct, reporting, interpretation or dissemination of the study or state no involvement.
+
+% TRIPOD LLM: Results
+\section{Results}\label{sec:results}
+\subsection{Participants}\label{sec:participants}
+% TRIPOD LLM: Participants
+% TRIPOD LLM: 16a. When using patient/EHR data, describe the flow of text/EHR/patient data through the study, including the number of documents/questions/participants with and without the outcome/ label and follow-up time as applicable.
+
+% TRIPOD LLM: 16b. When using patient/EHR data, report the characteristics overall and for each data source or setting and development/evaluation splits, including the key dates, key characteristics and sample size.
+
+% TRIPOD LLM: 16c. For LLM evaluation that includes clinical outcomes, show a comparison of the distribution of important clinical variables that may be associated with the outcome between development and evaluation data, if available
+
+% TRIPOD LLM: 16d. When using patient/EHR data, specify the number of participants and outcome events in each analysis (for example, for LLM development, hyperparameter tuning and LLM evaluation).
+
+\subsection{Performance}\label{sec:performance}
+% TRIPOd LLM: Performance
+% TRIPOd LLM: 17. Report LLM performance according to prespecified metrics (see item 7a) and/or human evaluation (see item 7d).
+
+\subsection{LLM updating}\label{sec:llm_updating}
+% TRIPOD LLM: LLM updating
+% TRIPOD LLM: 18. If applicable, report the results from any LLM updating, including the updated LLM and subsequent performance.
+
+% TRIPOD LLM: Discussion
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Interpretation}\label{sec:interpretation}
+% TRIPOD LLM: Interpretation
+% TRIPOD LLM: 19a. Give an overall interpretation of the main results, including issues of fairness in the context of the objectives and previous studies.
+
+\subsection{Limitations}\label{sec:limitations}
+% TRIPOD LLM: Limitations
+% TRIPOD LLM: 19b. Discuss any limitations of the study and their effects on any biases, statistical uncertainty and generalizability.
+
+\subsection{Usability of the LLM in context}\label{sec:usability}
+% TRIPOD LLM: Usability of the LLM in context
+% TRIPOD LLM: 19c. Describe any known challenges in using data for the specified task and domain context with reference to representation, missingness, harmonization and bias.
+
+% TRIPOD LLM: 19d. Define the intended use for the implementation under evaluation, including the intended input, end-user and level of autonomy/human oversight.
+
+% TRIPOD LLM: 19e. If applicable, describe how poor quality or unavailable input data should be assessed and handled when implementing the LLM; that is, what is the usability of the LLM in the context of current clinical care.
+
+% TRIPOD LLM: 19f. If applicable, specify whether users will be required to interact in the handling of the input data or use of the LLM, and what level of expertise is required of users.
+
+% TRIPOD LLM: 19g. Discuss any next steps for future research, with a specific view of the applicability and generalizability of the LLM.
+
+
+
+\section{Appendix}
+
+% non longtable format
+
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{p{0.3\textwidth} l p{0.3\textwidth} l l l }
+%         \toprule
+%          Section & Item & Description & Research Design & LLM task & Link  \\
+%          \midrule
+%          Title & 1 & Identify the study as developing, fine-tuning and/or evaluating the performance of an LLM, specifying the task, the target population and the outcome to be predicted. & All & All &  \\
+%          Abstract &  2 & See TRIPOD-LLM for abstracts. & All & All &  \\
+%          \midrule
+%         \multicolumn{3}{l}{\textbf{Introduction}} \\
+%         \multirow{2}{4em}{Background} & 3a & Explain the healthcare context/use case (for example, administrative, diagnostic, therapeutic and clinical workflow) and rationale for developing or evaluating the LLM, including references to existing approaches and models. & All & All & \ref{sec:introduction} \\
+%         & 3b & Describe the target population and the intended use of the LLM in the context of the care pathway, including its intended users in current gold standard practices. & E/H & All &  \\
+%         Objectives & 4 & Specify the study objectives, including whether the study describes the initial development, fine-tuning or validation of an LLM (or multiple stages). & All & All &  \ref{sec:introduction}\\
+%         \midrule
+%         \multicolumn{3}{l}{\textbf{Methods}} \\
+%         \multirow{5}{4em}{Data} & 5a & Describe the sources of data separately for the training, tuning and/or evaluation datasets and the rationale for using these data (for example, web corpora, clinical research/trial data, EHR data or unknown). & All & All &  \ref{sec:data} \\
+%         & 5b & Describe the relevant data points and provide a quantitative and qualitative description of their distribution and other relevant descriptors of the dataset. & All & All &  \ref{sec:data} \\
+%         & 5c & Specifically state the date of the oldest and newest item of text used in the development process (training, fine-tuning and reward modeling) and the evaluation datasets. & All & All &   \ref{sec:data}  \\
+%         & 5d & Describe any data preprocessing and quality checking, including whether this was similar across text corpora, institutions and relevant sociodemographic groups. & All & All &   \ref{sec:data}  \\
+%         & 5e & Describe how missing and imbalanced data were handled and provide reasons for omitting any data. & All & All &   \ref{sec:data}  \\
+%         \multirow{5}{4em}{Analytical Methods} & 6a & Report the LLM name, version and last date of training. & All & All & \ref{sec:analytical_methods} \\
+%         & 6b & Report details of the LLM development process, such as LLM architecture, training, fine-tuning procedures and alignment strategy and alignment goals. & M/D & All & \ref{sec:analytical_methods} \\
+%         & 6c & Report details of how the text was generated using the LLM, including any prompt engineering and inference settings (for example, seed, temperature, max token length and penalties). & M/D/E & All & \ref{sec:analytical_methods} \\
+%         & 6d & Specify the initial and postprocessed output of the LLM (for example, probabilities, classification and unstructured text). & All & All & \ref{sec:analytical_methods} \\
+%         & 6e & Provide details and rationale for any classification, and if applicable, how the probabilities were determined and thresholds identified. & All & C/OF & \ref{sec:analytical_methods} \\
+%         \multirow{5}{4em}{LLM Output} & 7a & Include metrics that capture the quality of generative outputs, such as consistency, relevance, accuracy and presence/type of errors compared to gold standards. & All & QA/IR/DG/SS/MT & \ref{sec:llm_output}\\
+%         & 7b & Report the outcome metrics' relevance to the downstream task at deployment time and, where applicable, the correlation of metric to human evaluation of the text. & E/H & All & \ref{sec:llm_output} \\
+%         & 7c & Clearly define the outcome, how the LLM predictions were calculated, the date of inference for closed-source LLMs and evaluation metrics. & E/H & All & \ref{sec:llm_output} \\
+%         & 7d & If outcome assessment requires subjective interpretation, describe the qualifications of the assessors, any instructions provided, relevant information on demographics of the assessors and interassessor agreement. & All & All & \ref{sec:llm_output} \\
+%         & 7e & Specify how performance was compared to other LLMs, humans and other benchmarks or standards. & All & All & \ref{sec:llm_output} \\
+%         \multirow{3}{4em}{Annotation} & 8a & If annotation was done, report how the text was labeled, including providing specific annotation guidelines with examples. & All & All & \ref{sec:annotation} \\
+%         & 8b & If annotation was done, report how many annotators labeled the dataset(s), including the proportion of data in each dataset that was annotated by more than one annotator, and the interannotator agreement. & All & All & \ref{sec:annotation} \\
+%         & 8c & If annotation was done, provide information on the background and experience of the annotators or the characteristics of any models involved in labeling. & All & All & \ref{sec:annotation} \\
+%         \multirow{2}{4em}{Prompting} & 9a & If research involved prompting LLMs, provide details on the processes used during prompt design, curation and selection. & All & All & \ref{sec:prompting} \\
+%         & 9b & If research involved prompting LLMs, report what data were used to develop the prompts. & All & All & \ref{sec:prompting} \\
+%         Summarization & 10 & Describe any preprocessing of the data before summarization. & All & SS \\
+%         Instruction tuning/alignment & 11 & If instruction tuning/alignment strategies were used, what were the instructions, data and interface used for evaluation, and what were the characteristics of the populations doing the evaluation? & M/D & All & \ref{sec:instruction_tuning_alignment} \\
+%         Compute & 12 & Report compute, or proxies thereof (for example, time on what and how many machines, cost on what and how many machines, inference time, floating-point operations per second). & M/D/E & All & \ref{sec:compute} \\
+%         Ethical approval & 13 & Name the institutional research board or ethics committee that approved the study and describe the participant-informed consent or the ethics committee waiver of informed consent. & All & All & \ref{sec:ethical_approval} \\
+%         \multirow{6}{4em}{Open science} & 14a & Give the source of funding and the role of the funders for the present study. & All & All & \ref{sec:open_science} \\
+%         & 14b & Declare any conflicts of interest and financial disclosures for all authors. & All & All & \ref{sec:open_science}  \\
+%         & 14c & Indicate where the study protocol can be accessed or state that a protocol was not prepared. & H & All & \ref{sec:open_science}  \\
+%         & 14d & Provide registration information for the study, including register name and registration number, or state that the study was not registered. & H & All & \ref{sec:open_science}  \\
+%         & 14e & Provide details of the availability of the study data. & All & All & \ref{sec:open_science}  \\
+%         & 14f & Provide details of the availability of the code to reproduce the study results. & All & All & \ref{sec:open_science}  \\
+%         Public involvement & 15 & Provide details of any patient and public involvement during the design, conduct, reporting, interpretation or dissemination of the study or state no involvement. & H & All & \ref{sec:public_involvement} \\
+%         \multicolumn{3}{l}{\textbf{Results}} \\
+%         \multirow{4}{4em}{Participants} & 16a & When using patient/EHR data, describe the flow of text/EHR/patient data through the study, including the number of documents/questions/participants with and without the outcome/label. & E/H & All & \ref{sec:participants} \\
+%         & 16b & When using patient/EHR data, report the characteristics overall and for each data source or setting and development/evaluation splits, including the key dates, key characteristics and sample size. & E/H & All & \ref{sec:participants} \\
+%         & 16c & For LLM evaluation that includes clinical outcomes, show a comparison of the distribution of important clinical variables that may be associated with the outcome between development and evaluation data. & E/H & All & \ref{sec:participants} \\
+%         & 16d & When using patient/EHR data, specify the number of participants and outcome events in each analysis. & E/H & All & \ref{sec:participants} \\
+%         Performance & 17 & Report LLM performance according to prespecified metrics and/or human evaluation. & All & All & \ref{sec:performance} \\
+%         LLM updating & 18 & If applicable, report the results from any LLM updating, including the updated LLM and subsequent performance. & All & All & \ref{sec:llm_updating} \\
+%         \multicolumn{3}{l}{\textbf{Discussion}} \\
+%         Interpretation & 19a & Give an overall interpretation of the main results, including issues of fairness in the context of the objectives and previous studies. & All & All &  \\
+%         Limitations & 19b & Discuss any limitations of the study and their effects on any biases, statistical uncertainty and generalizability. & All & All & \ref{sec:interpretation} \\
+%         \multirow{5}{4em}{Usability of the LLM in context} & 19c & Describe any known challenges in using data for the specified task and domain context with reference to representation, missingness, harmonization and bias. & E/H & All & \ref{sec:usability} \\
+%         & 19d & Define the intended use for the implementation under evaluation, including the intended input, end-user and level of autonomy/human oversight. & E/H & All & \ref{sec:usability} \\
+%         & 19e & If applicable, describe how poor quality or unavailable input data should be assessed and handled when implementing the LLM. & E/H & All & \ref{sec:usability} \\
+%         & 19f & If applicable, specify whether users will be required to interact in the handling of the input data or use of the LLM, and what level of expertise is required of users. & E/H & All & \ref{sec:usability} \\
+%         & 19g & Discuss any next steps for future research, with a specific view of the applicability and generalizability of the LLM. & All & All & \ref{sec:usability} \\
+         
+%     \end{tabular}
+%     \caption{For studies using existing LLMs, users should include reference(s) to reportable information if provided by the original developers or state that this information is not available. M, LLM methods; D, de novo LLM development; E, LLM evaluation; H, LLM evaluation in healthcare settings; C, classification; OF, outcome forecasting; QA, long-form question answering; IR, information retrieval; DG, document generation; SS, summarization and simplification; MT, machine translation; API, application programming interface.}
+%     \label{tab:TRIPOD-LLM}
+% \end{table}
+
+
+
+\begin{longtable}{p{0.2\textwidth} l p{0.3\textwidth} l p{0.1\textwidth} l }
+    \caption{For studies using existing LLMs, users should include reference(s) to reportable information if provided by the original developers or state that this information is not available. M, LLM methods; D, de novo LLM development; E, LLM evaluation; H, LLM evaluation in healthcare settings; C, classification; OF, outcome forecasting; QA, long-form question answering; IR, information retrieval; DG, document generation; SS, summarization and simplification; MT, machine translation; API, application programming interface.}
+    \label{tab:TRIPOD-LLM} \\
+% --- Header (repeats on every page) ---
+    \toprule
+    Section & Item & Description & Research Design & LLM task & Link \\
+    \midrule
+    \endfirsthead
+
+    \multicolumn{6}{l}{\tablename~\thetable{} -- continued from previous page}\\
+    \toprule
+    Section & Item & Description & Research Design & LLM task & Link \\
+    \midrule
+    \endhead
+
+    % --- Footer on every page ---
+    \midrule
+    \multicolumn{6}{r}{\emph{Continued on next page}}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+
+     \midrule
+     Title & 1 & Identify the study as developing, fine-tuning and/or evaluating the performance of an LLM, specifying the task, the target population and the outcome to be predicted. & All & All &  \\
+     Abstract &  2 & See TRIPOD-LLM for abstracts. & All & All &  \\
+     \midrule
+    \multicolumn{3}{l}{\textbf{Introduction}} \\
+    \multirow{2}{4em}{Background} & 3a & Explain the healthcare context/use case (for example, administrative, diagnostic, therapeutic and clinical workflow) and rationale for developing or evaluating the LLM, including references to existing approaches and models. & All & All & \ref{sec:introduction} \\
+    & 3b & Describe the target population and the intended use of the LLM in the context of the care pathway, including its intended users in current gold standard practices. & E/H & All & \ref{sec:introduction} \\
+    Objectives & 4 & Specify the study objectives, including whether the study describes the initial development, fine-tuning or validation of an LLM (or multiple stages). & All & All &  \ref{sec:introduction}\\
+    \midrule
+    \multicolumn{3}{l}{\textbf{Methods}} \\
+    \multirow{5}{4em}{Data} & 5a & Describe the sources of data separately for the training, tuning and/or evaluation datasets and the rationale for using these data (for example, web corpora, clinical research/trial data, EHR data or unknown). & All & All &  \ref{sec:data} \\
+    & 5b & Describe the relevant data points and provide a quantitative and qualitative description of their distribution and other relevant descriptors of the dataset. & All & All &  \ref{sec:data} \\
+    & 5c & Specifically state the date of the oldest and newest item of text used in the development process (training, fine-tuning and reward modeling) and the evaluation datasets. & All & All &   \ref{sec:data}  \\
+    & 5d & Describe any data preprocessing and quality checking, including whether this was similar across text corpora, institutions and relevant sociodemographic groups. & All & All &   \ref{sec:data}  \\
+    & 5e & Describe how missing and imbalanced data were handled and provide reasons for omitting any data. & All & All &   \ref{sec:data}  \\
+    \multirow{5}{4em}{Analytical Methods} & 6a & Report the LLM name, version and last date of training. & All & All & \ref{sec:analytical_methods} \\
+    & 6b & Report details of the LLM development process, such as LLM architecture, training, fine-tuning procedures and alignment strategy and alignment goals. & M/D & All & \ref{sec:analytical_methods} \\
+    & 6c & Report details of how the text was generated using the LLM, including any prompt engineering and inference settings (for example, seed, temperature, max token length and penalties). & M/D/E & All & \ref{sec:analytical_methods} \\
+    & 6d & Specify the initial and postprocessed output of the LLM (for example, probabilities, classification and unstructured text). & All & All & \ref{sec:analytical_methods} \\
+    & 6e & Provide details and rationale for any classification, and if applicable, how the probabilities were determined and thresholds identified. & All & C/OF & \ref{sec:analytical_methods} \\
+    \multirow{5}{4em}{LLM Output} & 7a & Include metrics that capture the quality of generative outputs, such as consistency, relevance, accuracy and presence/type of errors compared to gold standards. & All & QA, IR, DG, SS, \& MT & \ref{sec:llm_output}\\
+    & 7b & Report the outcome metrics' relevance to the downstream task at deployment time and, where applicable, the correlation of metric to human evaluation of the text. & E/H & All & \ref{sec:llm_output} \\
+    & 7c & Clearly define the outcome, how the LLM predictions were calculated, the date of inference for closed-source LLMs and evaluation metrics. & E/H & All & \ref{sec:llm_output} \\
+    & 7d & If outcome assessment requires subjective interpretation, describe the qualifications of the assessors, any instructions provided, relevant information on demographics of the assessors and interassessor agreement. & All & All & \ref{sec:llm_output} \\
+    & 7e & Specify how performance was compared to other LLMs, humans and other benchmarks or standards. & All & All & \ref{sec:llm_output} \\
+    \multirow{3}{4em}{Annotation} & 8a & If annotation was done, report how the text was labeled, including providing specific annotation guidelines with examples. & All & All & \ref{sec:annotation} \\
+    & 8b & If annotation was done, report how many annotators labeled the dataset(s), including the proportion of data in each dataset that was annotated by more than one annotator, and the interannotator agreement. & All & All & \ref{sec:annotation} \\
+    & 8c & If annotation was done, provide information on the background and experience of the annotators or the characteristics of any models involved in labeling. & All & All & \ref{sec:annotation} \\
+    \multirow{2}{4em}{Prompting} & 9a & If research involved prompting LLMs, provide details on the processes used during prompt design, curation and selection. & All & All & \ref{sec:prompting} \\
+    & 9b & If research involved prompting LLMs, report what data were used to develop the prompts. & All & All & \ref{sec:prompting} \\
+    Summarization & 10 & Describe any preprocessing of the data before summarization. & All & SS & \ref{sec:summarization} \\
+    Instruction tuning/alignment & 11 & If instruction tuning/alignment strategies were used, what were the instructions, data and interface used for evaluation, and what were the characteristics of the populations doing the evaluation? & M/D & All & \ref{sec:instruction_tuning_alignment} \\
+    Compute & 12 & Report compute, or proxies thereof (for example, time on what and how many machines, cost on what and how many machines, inference time, floating-point operations per second). & M/D/E & All & \ref{sec:compute} \\
+    Ethical approval & 13 & Name the institutional research board or ethics committee that approved the study and describe the participant-informed consent or the ethics committee waiver of informed consent. & All & All & \ref{sec:ethical_approval} \\
+    \multirow{6}{4em}{Open science} & 14a & Give the source of funding and the role of the funders for the present study. & All & All & \ref{sec:open_science} \\
+    & 14b & Declare any conflicts of interest and financial disclosures for all authors. & All & All & \ref{sec:open_science}  \\
+    & 14c & Indicate where the study protocol can be accessed or state that a protocol was not prepared. & H & All & \ref{sec:open_science}  \\
+    & 14d & Provide registration information for the study, including register name and registration number, or state that the study was not registered. & H & All & \ref{sec:open_science}  \\
+    & 14e & Provide details of the availability of the study data. & All & All & \ref{sec:open_science}  \\
+    & 14f & Provide details of the availability of the code to reproduce the study results. & All & All & \ref{sec:open_science}  \\
+    Public involvement & 15 & Provide details of any patient and public involvement during the design, conduct, reporting, interpretation or dissemination of the study or state no involvement. & H & All & \ref{sec:public_involvement} \\
+    \multicolumn{3}{l}{\textbf{Results}} \\
+    \multirow{4}{4em}{Participants} & 16a & When using patient/EHR data, describe the flow of text/EHR/patient data through the study, including the number of documents/questions/participants with and without the outcome/label. & E/H & All & \ref{sec:participants} \\
+    & 16b & When using patient/EHR data, report the characteristics overall and for each data source or setting and development/evaluation splits, including the key dates, key characteristics and sample size. & E/H & All & \ref{sec:participants} \\
+    & 16c & For LLM evaluation that includes clinical outcomes, show a comparison of the distribution of important clinical variables that may be associated with the outcome between development and evaluation data. & E/H & All & \ref{sec:participants} \\
+    & 16d & When using patient/EHR data, specify the number of participants and outcome events in each analysis. & E/H & All & \ref{sec:participants} \\
+    Performance & 17 & Report LLM performance according to prespecified metrics and/or human evaluation. & All & All & \ref{sec:performance} \\
+    LLM updating & 18 & If applicable, report the results from any LLM updating, including the updated LLM and subsequent performance. & All & All & \ref{sec:llm_updating} \\
+    \multicolumn{3}{l}{\textbf{Discussion}} \\
+    Interpretation & 19a & Give an overall interpretation of the main results, including issues of fairness in the context of the objectives and previous studies. & All & All & \ref{sec:interpretation} \\
+    Limitations & 19b & Discuss any limitations of the study and their effects on any biases, statistical uncertainty and generalizability. & All & All & \ref{sec:limitations} \\
+    \multirow{5}{4em}{Usability of the LLM in context} & 19c & Describe any known challenges in using data for the specified task and domain context with reference to representation, missingness, harmonization and bias. & E/H & All & \ref{sec:usability} \\
+    & 19d & Define the intended use for the implementation under evaluation, including the intended input, end-user and level of autonomy/human oversight. & E/H & All & \ref{sec:usability} \\
+    & 19e & If applicable, describe how poor quality or unavailable input data should be assessed and handled when implementing the LLM. & E/H & All & \ref{sec:usability} \\
+    & 19f & If applicable, specify whether users will be required to interact in the handling of the input data or use of the LLM, and what level of expertise is required of users. & E/H & All & \ref{sec:usability} \\
+    & 19g & Discuss any next steps for future research, with a specific view of the applicability and generalizability of the LLM. & All & All & \ref{sec:usability} \\
+         
+\end{longtable}
+
+
+
+
+% non longtable format
+% \begin{table}[]
+%     \centering
+%     \begin{tabular}{p{0.3\textwidth} l p{0.3\textwidth} l l l }
+%         \toprule
+%          Section & Item & Description & Research Design & LLM task & Link  \\
+%          \midrule
+%          Title & 2a & Identify the study as developing, fine-tuning and/or evaluating the performance of an LLM, specifying the task, the target population and the outcome to be predicted. & All & All & \ref{sec:abstract} \\
+%          \midrule
+%          Background &  2b & Provide a brief explanation of the healthcare context, use case and rationale for developing or evaluating the performance of an LLM. & E \& H & All &  \ref{sec:abstract}\\
+%          \midrule
+%          Objectives &  2c & Specify the study objectives, including whether the study describes LLMs development, tuning and/or evaluation & All & All & \ref{sec:abstract} \\
+%          \midrule
+%         \multirow{6}{4em}{Methods} & 2d & Describe the key elements of the study setting. & All & All & \ref{sec:abstract} \\
+%         & 2e & Detail all data used in the study, specify data splits and any selective use of data. & M, D, \& E & All & \ref{sec:abstract} \\
+%         & 2f & Specify the name and version of LLM(s) used. & All & All & \ref{sec:abstract} \\
+%         & 2g & Briefly summarize the LLM-building steps, including any fine-tuning, reward modeling and RLHF. & M \& D & All & \ref{sec:abstract} \\
+%         & 2h & Describe the specific tasks performed by the LLMs (for example, medical QA, summarization and extraction), highlighting key inputs and outputs used in the final LLM. & All & All & \ref{sec:abstract} \\
+%         & 2i & Specify the evaluation datasets/populations used, including the endpoint evaluated, and detail whether this information was held out during training/tuning where relevant and what measure(s) were used to evaluate LLM performance. & All & All & \ref{sec:abstract} \\
+%         \midrule
+%         Results &  2j & Give an overall report and interpretation of the main results.  & All & All & \ref{sec:abstract} \\
+%          \midrule
+%         Objectives &  2k & Explicitly state any broader implications or concerns that have arisen in light of these results. & All & All & \ref{sec:abstract} \\
+%          \midrule
+%         Other &  2c & Give the registration number and name of the registry or repository (if relevant). & H & All &  \ref{sec:abstract}\\
+%          \bottomrule
+%         \end{tabular}
+%     \caption{TRIPOD-LLM for Abstracts. RLHF, reinforcement learning with human feedback. For studies using existing LLMs, users should include reference(s) to reportable information if provided by the original developers or state that this information is not available. M, LLM methods; D, de novo LLM development; E, LLM evaluation; H, LLM evaluation in healthcare settings; C, classification; OF, outcome forecasting; QA, long-form question answering; IR, information retrieval; DG, document generation; SS, summarization and simplification; MT, machine translation; API, application programming interface.}
+%     \label{tab:TRIPOD-LLM-Abstract}
+% \end{table}
+
+
+
+\begin{longtable}{p{0.2\textwidth} l p{0.3\textwidth} l l l}
+    \caption{TRIPOD-LLM for Abstracts. RLHF, reinforcement learning with human feedback. For studies using existing LLMs, users should include reference(s) to reportable information if provided by the original developers or state that this information is not available. M, LLM methods; D, de novo LLM development; E, LLM evaluation; H, LLM evaluation in healthcare settings; C, classification; OF, outcome forecasting; QA, long-form question answering; IR, information retrieval; DG, document generation; SS, summarization and simplification; MT, machine translation; API, application programming interface.}
+    \label{tab:TRIPOD-LLM-Abstract}\\
+
+    % --- Header (repeats on every page) ---
+    \toprule
+    Section & Item & Description & Research Design & LLM task & Link \\
+    \midrule
+    \endfirsthead
+
+    \multicolumn{6}{l}{\tablename~\thetable{} -- continued from previous page}\\
+    \toprule
+    Section & Item & Description & Research Design & LLM task & Link \\
+    \midrule
+    \endhead
+
+    % --- Footer on every page ---
+    \midrule
+    \multicolumn{6}{r}{\emph{Continued on next page}}\\
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+
+         Title & 2a & Identify the study as developing, fine-tuning and/or evaluating the performance of an LLM, specifying the task, the target population and the outcome to be predicted. & All & All & \ref{sec:abstract} \\
+         \midrule
+         Background &  2b & Provide a brief explanation of the healthcare context, use case and rationale for developing or evaluating the performance of an LLM. & E \& H & All &  \ref{sec:abstract}\\
+         \midrule
+         Objectives &  2c & Specify the study objectives, including whether the study describes LLMs development, tuning and/or evaluation & All & All & \ref{sec:abstract} \\
+         \midrule
+        \multirow{6}{4em}{Methods} & 2d & Describe the key elements of the study setting. & All & All & \ref{sec:abstract} \\
+        & 2e & Detail all data used in the study, specify data splits and any selective use of data. & M, D, \& E & All & \ref{sec:abstract} \\
+        & 2f & Specify the name and version of LLM(s) used. & All & All & \ref{sec:abstract} \\
+        & 2g & Briefly summarize the LLM-building steps, including any fine-tuning, reward modeling and RLHF. & M \& D & All & \ref{sec:abstract} \\
+        & 2h & Describe the specific tasks performed by the LLMs (for example, medical QA, summarization and extraction), highlighting key inputs and outputs used in the final LLM. & All & All & \ref{sec:abstract} \\
+        & 2i & Specify the evaluation datasets/populations used, including the endpoint evaluated, and detail whether this information was held out during training/tuning where relevant and what measure(s) were used to evaluate LLM performance. & All & All & \ref{sec:abstract} \\
+        \midrule
+        Results &  2j & Give an overall report and interpretation of the main results.  & All & All & \ref{sec:abstract} \\
+         \midrule
+        Objectives &  2k & Explicitly state any broader implications or concerns that have arisen in light of these results. & All & All & \ref{sec:abstract} \\
+         \midrule
+        Other &  2c & Give the registration number and name of the registry or repository (if relevant). & H & All &  \ref{sec:abstract}\\
+         \bottomrule
+
+     \end{longtable}
+
+        
+
+\end{document}
